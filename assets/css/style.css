@@ -459,7 +459,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: hsla(240, 1%, 17%, 1);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -477,7 +477,7 @@ main {
 
 .navbar-link {
   color: var(--light-gray);
-  font-size: var(--fs-8);
+  font-size: var(--fs-6);
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
@@ -785,7 +785,7 @@ main {
   margin-left: 45px;
 }
 
-.timeline-item { position: relative; }
+.timeline-item { position: relative; animation: scaleUp 0.25s ease forwards;}
 
 .timeline-item:not(:last-child) { margin-bottom: 20px; }
 
@@ -1049,6 +1049,7 @@ main {
   box-shadow: var(--shadow-4);
   border-radius: 16px;
   z-index: 1;
+  animation: scaleUp 0.25s ease forwards;
 }
 
 .blog-post-item > a::before {
